@@ -4,15 +4,17 @@
   "description": "an api for rock/metal bands information",
   "main": "server.js",
   "scripts": {
-    "server": "node server.js",
-    "dev": "nodemon server.js"
+   "start":"./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src"
   },
   "author": "Ali Rabiee",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "netlify-lambda": "^2.0.15",
+    "serverless-http": "^3.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
